@@ -1,0 +1,27 @@
+name: UnitedEffort
+main: unitedeffort.UnitedEffortPlugin
+version: 1.1
+api-version: 1.14
+commands:
+  role:
+    description: Assigns you a role
+    usage: |
+      Usage:
+        /role create <role>: Creates a new role
+        /role remove <role>: Removes a role
+        /role color <role> <color>: Sets the color of a role
+        /role rename <role> <new_name>: Renames a role
+        /role set <role> [player]: Assigns a role to the executor or [player]
+        /role clear [player]: Clears the role from the executor or [player]
+    permission: unitedeffort.role
+  afk:
+    description: Marks you as AFK
+    usage: "Usage: /afk"
+    permission: unitedeffort.afk
+permissions:
+  unitedeffort.role:
+    description: Allows role command
+    default: op
+  unitedeffort.afk:
+    description: Allows afk command
+    default: true

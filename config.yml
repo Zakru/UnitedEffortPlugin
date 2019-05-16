@@ -1,0 +1,28 @@
+# AFK
+# ===
+
+# Time in ticks until a player is marked AFK (12000 = 10 minutes)
+afkTime: 12000
+
+# Messages that will be displayed when a player's AFK state begins or
+# ends, respectively ("" disables the message)
+afkBeginMessage: "%player% is now AFK"
+afkEndMessage: "%player% is no longer AFK"
+
+# SLEEP
+# =====
+
+# How many of the current active players need to sleep for the night to
+# pass? (1 = all players (disable), 0.5 = half of the players and so on)
+sleepLimit: 1
+# Inclusive? (If the amount is exactly the value defined above, succeed)
+# If the amount has to be higher than the value above, set this to false
+sleepInclusive: true
+# Message when a player has gone to sleep
+sleepMessage: "%player% is now sleeping (%percentage%)"
+# Message night is skipped
+sleepSkipMessage: "Good morning!"
+
+# Example settings to pass the night when the majority is sleeping:
+# sleepLimit: 0.5
+# sleepInclusive: false
